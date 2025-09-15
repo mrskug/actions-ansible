@@ -16,7 +16,7 @@ inputs:
     default: playbook.yml
 runs:
   using: docker
-  image: docker://euclid1990/actions-ansible
+  image: docker://mrskug/actions-ansible
   args:
     - ${{ inputs.inventory }}
     - ${{ inputs.playbook }}
